@@ -5,7 +5,7 @@ FROM tomcat:10.1-jdk17-temurin
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copiar seda.war como ROOT.war para que responda en la raíz de la URL
-COPY seda.war /usr/local/tomcat/webapps/ROOT.war
+COPY sedada.war /usr/local/tomcat/webapps/ROOT.war
 
 # Ajuste del puerto dinámico para Railway
 ENV PORT 8080
